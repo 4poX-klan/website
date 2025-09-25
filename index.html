@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/styles.css">
-    <script src="/js/burger-menu.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/burger-menu.js"></script>
     <title>4poX klan</title>
 </head>
 <body>
@@ -20,17 +20,19 @@
         </nav>
     </header>
     <div id="burger-menu">
-        <nav>
+        <nav onclick="burgerMenu()">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">Events</a></li>
+                <li><a href="https://fonts.google.com/" target="_blank">Events</a></li>
             </ul>
         </nav>
     </div>
     <main>
+        <div id="burger-menu-overlay" onclick="burgerMenu()"></div>
         <div class="top">
             <h1>Lineage @</h1>
             <p><strong>Interlude</strong></p>
+            <p><a href="#">www.lineage2.ms</a></p>
         </div>
     </main>
 </body>

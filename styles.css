@@ -26,6 +26,7 @@ header nav{
     display: flex;
 }
 header nav ul{
+    display: flex;
     padding-inline-start: 0;
     margin-right: auto;
 }
@@ -79,12 +80,6 @@ div#burger-menu{
     border-width: 0 2px 2px 2px;
     border-style: solid;
     border-color: var(--hover-color);
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 1s ease-out;
-}
-div#burger-menu.on{
-    max-height: 168px;
 }
 div#burger-menu nav{
     display: flex;
@@ -105,34 +100,18 @@ div#burger-menu nav ul li:hover{
     background-color: var(--hover-link-color);
 }
 div#burger-menu nav ul li a{
-    width: 184px;
-    flex: 1;
+    min-width: 184px;
     color: white;
     font-size: 1.5em;
-    text-align: center;
     text-decoration: none;
+    flex: 1;
+    text-align: center;
     padding: 15px 30px;
 }
 
 main{
-    border: 3px solid var(--hover-color);
-    margin-block-start: 2em;
-    text-align: center;
-    position: relative;
-}
-main div#burger-menu-overlay{
-    display: none;
-    background-color: black;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: .75;
-}
-main div#burger-menu-overlay.on{
-    display: block;
-}
-main div.top{
     font-family: 'Lineage';
+    text-align: center;
 }
 main div.top h1{
     font-size: 3em;
@@ -141,11 +120,4 @@ main div.top h1{
 main div.top p{
     margin-block-start: 0;
     font-size: 1.25em;
-}
-main div.top p a{
-    padding: 10px 20px;
-    text-underline-offset: .25em;
-}
-main div.top p a:hover{
-    background-color: var(--hover-link-color);
 }
