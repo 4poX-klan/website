@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Lineage';
+    src: url(/fonts/Lineage2.ttf);
+}
+@font-face {
+    font-family: 'Cormorant';
+    src: url(/fonts/CormorantUnicase-Regular.ttf);
+}
+:root{
+    --hover-color: rgb(35, 35, 35);
+    --hover-link-color: rgb(0, 0, 35);
+}
+
+html{
+    background: black;
+    color: white;
+}
+
+header{
+    font-family: 'Lineage';
+    border-width: 3px 3px 1px 3px;
+    border-style: solid;
+    border-color: var(--hover-color);
+}
+header nav{
+    display: flex;
+}
+header nav ul{
+    display: flex;
+    padding-inline-start: 0;
+    margin-right: auto;
+}
+header nav ul li{
+    display: flex;
+}
+header nav ul li:hover{
+    background-color: var(--hover-color);
+}
+header nav ul li a{
+    font-size: 2em;
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    padding: 10px 20px;
+}
+header nav ul li a span{
+    color: rgb(255, 255, 0);
+}
+header nav button{
+    border: none;
+    background: none;
+    padding: 0 20px;
+    cursor: pointer;
+}
+header nav button:hover{
+    background-color: var(--hover-color);
+}
+header nav button svg{
+    display: block;
+}
+header nav button svg#burger-menu-open{
+    fill: rgb(0, 165, 0);
+    width: 37px;
+    height: 37px;
+}
+header nav button svg#burger-menu-open.off{
+    display: none;
+}
+header nav button svg#burger-menu-close{
+    display: none;
+    fill: rgb(255, 0, 0);
+    width: 37px;
+    height: 37px;
+}
+header nav button svg#burger-menu-close.on{
+    display: block;
+}
+
+div#burger-menu{
+    font-family: 'Lineage';
+    border-width: 0 2px 2px 2px;
+    border-style: solid;
+    border-color: var(--hover-color);
+}
+div#burger-menu nav{
+    display: flex;
+    justify-content: center;
+}
+div#burger-menu nav ul{
+    padding-inline-start: 0;
+    display: grid;
+    gap: 1em;
+}
+div#burger-menu nav ul li{
+    display: flex;
+    border-bottom: 1px solid var(--hover-link-color);
+    border-radius: 1em;
+    box-shadow: inset 0 -1px 4px rgb(0, 0, 238);
+}
+div#burger-menu nav ul li:hover{
+    background-color: var(--hover-link-color);
+}
+div#burger-menu nav ul li a{
+    min-width: 184px;
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    flex: 1;
+    text-align: center;
+    padding: 15px 30px;
+}
+
+main{
+    font-family: 'Lineage';
+    text-align: center;
+}
+main div.top h1{
+    font-size: 3em;
+    margin-block-end: 0;
+}
+main div.top p{
+    margin-block-start: 0;
+    font-size: 1.25em;
+}
