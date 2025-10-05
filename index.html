@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/burger-menu.js"></script>
     <link rel="stylesheet" href="styles/index.css">
     <title>4poX klan</title>
 </head>
@@ -10,13 +11,54 @@
     <header>
         <nav>
             <ul>
-                <li><a href="about.html">4poX <span>klan</span></a></li>
+                <li><a href="#">4poX <span>klan</span></a></li>
             </ul>
-            <button>
+            <button onclick="burgerMenu()">
                 <svg id="burger-menu-open" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
                 <svg id="burger-menu-close" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
             </button>
         </nav>
+        <nav id="burger-menu" onclick="burgerMenu()">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
     </header>
+    <main>
+        <div id="burger-menu-overlay" onclick="burgerMenu()"></div>
+        <section id="top">
+            <h1>Lineage @</h1>
+            <p class="interlude">Interlude</p>
+            <p><a href="#">www lineage2 ms</a></p>
+            <p>Magic in the 4poX</p>
+        </section>
+        <section id="mid">
+            <article>
+                <h2>Здарова!</h2>
+                <p>Роковой заклинатель и лидер клана — неуловимый Klitcher — приветствует тебя.</p>
+
+                <h3>Chapter I. Начало</h3>
+                <p>В эпоху миленьких Ниалов, когда Баюм только начинал свою карьеру в Tower of Insolence, когда шлюпке Закена были еще рады в бухте Ant Queen, Klitcher уже тогда сеял в людях зерно своей философии: решительное «Похуй» и созидательное «Нахуй». Эти два столпа стали основанием грядущих перемен.</p>
+
+                <h3>Chapter II. Осознание</h3>
+                <p>Вокруг него собрались первые искатели истины. Их влекли магия философии и мощь двух столпов. Те, кто ощущал пустоту в душе после фарма, впервые открыли иной путь — путь дерзости, смелости и похуинства. Вместе они возвели первые стены братства и высекли кодекс, где решимость сильнее страха, а смех возвышается над унынием. Так родился клан 4poX. </p>
+
+                <h3>Chapter III. Вознесение</h3>
+                <p>Став под знамёна 4poX, вам предстоит пройти испытание, что определит судьбу и закалит решимость. Сражения будут ждать повсюду. Здесь проверяются не только умения и сила воли, но и способность не просто сказать брату-спойлеру твёрдое: «Пошёл в пизду», но и дать номер самой страшной подруги.</p>
+                <p>Тот, кто выдержит этот путь, обретает не просто клан, а новое измерение свободы. 4poX возносит своих воинов над серостью, стирая границу «разумного», и награждает их единством, смехом и славой, что навсегда останется в истории.</p>
+
+                <h3>Chapter IV. Легенды</h3>
+                <p>Время — наш главный враг и наш величайший союзник. Оно стирает имена, но хранит истории. И пока герои прошлого запутались в паутине дней, — мы их продолжение.</p>
+                <p>4poX — это не ожидание, а действие. Лишь действием мы докажем, что достойны Легенд, и однажды они вернутся не к пеплу, а к огню!</p>
+            </article>
+            <article>
+                <details>
+                    <summary>CODEX</summary>
+                    <p>test</p>
+                </details>
+            </article>
+        </section>
+    </main>
 </body>
 </html>

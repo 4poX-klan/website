@@ -1,0 +1,47 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'main/styles/codex.css' %}">
+{% endblock styles %}
+
+{% block title %}
+<title>4poX codex</title>
+{% endblock title %}
+
+{% block header %}
+<header>
+    <nav>
+        <ul>
+            <li><a href="{% url 'home' %}">4poX<span>codex</span></a></li>
+            <li><a href="{% url 'menu' %}"><svg xmlns="http://www.w3.org/2000/svg" height="2.5rem" viewBox="0 -960 960 960" width="2.5rem" fill="#008000"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/></svg></a href="{% url 'menu' %}"></li>
+        </ul>
+    </nav>
+</header>
+{% endblock header %}
+
+{% block main %}
+<main>
+    <img src="{% static 'main/images/4poX_codex.png' %}" alt="4poX_codex">
+    <h2>CODEX</h2>
+    <p>Правило одно — не суйся, гнусное хуйло,<br>
+    Здесь братство, здесь огонь, а не ебучее кино.</p>
+
+    <p>На твои проблемы, брат, нам всё равно,<br>
+    Не тянешь шмот на x10? — стой сзади, нюхай говно.</p>
+
+    <p>Мы братство по личным интересам и не ищем друзей,<br>
+    У нормальных типов их и так — хоть хуем бей.</p>
+
+    <p>Мы поможем там, где ты один слаб,<br>
+    Мешает какой-то уебан? — жопой вперед заберём в штаб.</p>
+
+    <p>Мы поможем там, где есть фан,<br>
+    Смех, азарт и дерзость — это наш план!</p>
+
+    <p>Время точит тело, как ржавчина мечи,<br>
+    Мы бы объясняли и дальше, но… НО!<br>
+    Если досюда ты ещё не въехал в суть,<br>
+    То нам похуй, а тебе — нахуй, в путь!</p>
+</main>
+{% endblock main %}

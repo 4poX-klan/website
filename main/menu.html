@@ -1,0 +1,35 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'main/styles/menu.css' %}">
+{% endblock styles %}
+
+{% block title %}
+<title>4poX menu</title>
+{% endblock title %}
+
+{% block header %}
+<header>
+    <nav>
+        <ul>
+            <li><a href="{% url 'home' %}">4poX<span>menu</span></a></li>
+            <li><a href="{% url 'home' %}"><svg xmlns="http://www.w3.org/2000/svg" height="2.5rem" viewBox="0 -960 960 960" width="2.5rem" fill="#ff0000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        </ul>
+    </nav>
+</header>
+{% endblock header %}
+
+{% block main %}
+<main>
+    <h1>Menu</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Codex</a></li>
+            <li><a href="#">Description</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </nav>
+</main>
+{% endblock main %}

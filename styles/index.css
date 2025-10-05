@@ -1,3 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap');
+@font-face{
+    font-family: 'lineage2';
+    src: url(../fonts/Lineage2.ttf);
+}
+:root{
+    --background-color: rgb(25, 25, 25);
+    --hover-color: rgb(50, 50, 50);
+    --text-color: rgb(200, 200, 200)
+}
 html{
-    background: red;
+    background: black;
+    color: white;
+}
+body{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 8px;
+}
+header{
+    font-family: 'lineage2';
+    border-width: 3px 3px 2px 3px;
+    border-style: solid;
+    border-color: var(--hover-color);
+}
+header nav{
+    display: flex;
+    border-bottom: 1px solid var(--hover-color);
+}
+header nav ul{
+    padding-inline-start: 0;
+    margin-right: auto;
+}
+header nav ul li{
+    display: flex;
+}
+header nav ul li:hover{
+    background-color: var(--hover-color);
+}
+header nav ul li a{
+    color: red;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+header nav ul a span{
+    color: yellow;
+}
+header nav button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 0;
+    padding-inline: 16px;
+}
+header nav button:hover{
+    background-color: var(--hover-color);
+}
+header nav button svg{
+    display: flex;
+    width: 37px;
+    height: 37px;
+    fill: green;
+}
+header nav button svg#burger-menu-close{
+    display: none;
+    fill: red;
+}
+header nav button svg#burger-menu-open.disp-none{
+    display: none;
+}
+header nav button svg#burger-menu-close.disp-flex{
+    display: flex;
+}
+
+header nav#burger-menu{
+    border: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-out;
+    justify-content: center;
+}
+header nav#burger-menu.menu-on{
+    max-height: 138px;
+}
+header nav#burger-menu ul{
+    width: 62%;
+    margin-right: 0;
+}
+header nav#burger-menu ul li{
+    border-bottom: 1px solid var(--hover-color);
+    justify-content: center;
+    font-size: .75em;
+}
+header nav#burger-menu ul li a{
+    color: white;
+    flex: 1;
+    text-align: center;
+    padding: 12px 0;
+}
+
+main{
+    font-family: 'El Messiri';
+    text-align: center;
+    position: relative;
+}
+main div#burger-menu-overlay{
+    background-color: black;
+    opacity: .75;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+main div#burger-menu-overlay.disp-block{
+    display: block;
+}
+main section#top{
+    font-family: 'lineage2';
+    margin-block-start: 1em;
+    border: 2px solid var(--hover-color);
+}
+main section#top h1{
+    font-size: 2.5em;
+    margin-block-end: 0;
+}
+main section#top p.interlude{
+    margin-block-start: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+main section#top p{
+    font-size: 1.25em;
+    text-underline-offset: .25em;
+}
+main section#mid{
+    margin-block-start: 1em;
+    border: 2px solid var(--hover-color);
+    font-size: 1.125em;
+    padding-inline: 8px;
+}
+main section#mid h2,
+h3{
+    margin-block-end: 0;
+    background-color: var(--background-color);
+    padding-block: .5em;
+}
+main section#mid p{
+    margin-block: .5em 1em;
+    color: var(--text-color);
 }
