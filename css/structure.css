@@ -1,0 +1,118 @@
+.structure{
+    max-width: 824px;
+    margin: 0 auto;
+}
+.structure header{
+    text-align: center;
+}
+.structure header h1{
+    margin-block-end: 0;
+    background-color: var(--highlight-color);
+    padding-block: .25em;
+}
+.structure header p{
+    margin-block-start: .5em;
+}
+.structure article.info{
+    text-align: center;
+}
+.structure article.info h2{
+    margin-block-end: 0;
+    padding-block: .3125em;
+    background-color: var(--highlight-color);
+}
+.structure article.info p.compos{
+    margin-block-start: .5em;
+}
+.structure article.info details{
+    margin-block-end: 1em;
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+}
+.structure article.info details summary{
+    padding-block: .75em;
+    font-family: "lineage2";
+    color: orange;
+    letter-spacing: .125em;
+    list-style: none;
+    cursor: pointer;
+    transition: background-color .5s ease-out;
+}
+.structure article.info details summary::-webkit-details-marker {
+  display: none;
+}
+.structure article.info details summary:hover{
+    background-color: var(--hover-color);
+}
+.structure article.info details p{
+    padding-inline: .375em;
+}
+.structure article.info details p:first-of-type{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-block-start: 0;
+    border-top: 1px solid var(--border-color);
+    padding-block-start: 1em;
+    color: green;
+}
+.structure article.info details p.main-info{
+    display: block;
+}
+.structure article.info details p:first-of-type span.base{
+    color: red;
+}
+.structure article.info details p:first-of-type span.sub{
+    color: yellow;
+}
+.structure article.info details p.member-info{
+    margin-block-start: 0;
+    border-top: 1px solid var(--border-color);
+    padding-block-start: 1em;
+}
+.structure article.info details button{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    border: 0;
+    border-top: 1px solid var(--border-color);
+    padding: .5em 0;
+    background: none;
+    cursor: pointer;
+}
+.structure article.info details button:hover{
+    background-color: var(--hover-color);
+}
+.structure article.info details button svg{
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: red;
+}
+
+.structure article.info details.form summary{
+    color: rgb(255, 200, 100);
+}
+.structure article.info details.kl summary{
+    color: red;
+}
+.structure article.info details.wl summary{
+    color: yellow;
+}
+.structure article.info details.main-bish summary{
+    color: green;
+}
+.structure article.info details.supp-bish summary{
+    color: rgb(128, 178, 128);
+}
+.structure article.info details.sub-bish summary{
+    color: rgb(0, 128, 128);
+}
+.structure article.info details.warc summary{
+    color: purple;
+}
+.structure article.info details.oly-farmer summary{
+    color: rgb(200, 0, 100);
+}
+.structure article.info details.dmg summary{
+    color: gray;
+}

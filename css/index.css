@@ -1,0 +1,139 @@
+.index{
+    max-width: 824px;
+    margin: 0 auto;
+}
+.index header{
+    text-align: center;
+    font-family: "lineage2";
+    font-size: 1.25em;
+    letter-spacing: .0625em;
+}
+.index header h1{
+    margin-block-end: 0;
+}
+.index header p.server-chronicle{
+    margin-block: 0 .75em;
+}
+.index header a.server-link{
+    padding: .75em 1em;
+    color: rgb(0, 128, 255);
+    text-underline-offset: .1875em;
+    transition: background-color .5s ease-out;
+}
+.index header a.server-link:hover{
+    background-color: var(--hover-color);
+}
+.index header p.klan-slogan{
+    font-family: "Gentium Book Plus";
+}
+.index header p.klan-slogan span{
+    font-family: "lineage2";
+    padding-inline: .125em;
+}
+.index article.welcome{
+    text-align: center;
+}
+.index article.welcome h2{
+    background-color: var(--highlight-color);
+    margin-block: 0;
+    padding-block: .3125em;
+}
+.index article.welcome p.welcome{
+    margin-block-start: .5em;
+    padding-inline: .25em;
+}
+.index article.welcome details{
+    margin-block-end: 1em;
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+}
+.index article.welcome details summary{
+    padding-block: .75em;
+    font-family: "lineage2";
+    color: orange;
+    letter-spacing: .125em;
+    list-style: none;
+    cursor: pointer;
+    transition: background-color .5s ease-out;
+}
+.index article.welcome details summary::-webkit-details-marker {
+  display: none;
+}
+.index article.welcome details summary:hover{
+    background-color: var(--hover-color);
+}
+.index article.welcome details p{
+    padding-inline: .375em;
+}
+.index article.welcome details p:first-of-type{
+    margin-block-start: 0;
+    border-top: 1px solid var(--border-color);
+    padding-block-start: 1em;
+    color: green;
+}
+.index article.welcome details p.renaissance{
+    margin-block-start: 0;
+    border-top: 1px solid var(--border-color);
+    padding-block-start: 1em;
+}
+.index article.welcome details ul{
+    padding-inline: .375em;
+}
+.index article.welcome details ul li{
+    list-style: none;
+    color: green;
+}
+.index article.welcome details ul li span:first-of-type{
+    color: rgb(150, 150, 150);
+}
+.index article.welcome details button{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    border: 0;
+    border-top: 1px solid var(--border-color);
+    padding: .5em 0;
+    background: none;
+    cursor: pointer;
+}
+.index article.welcome details button:hover{
+    background-color: var(--hover-color);
+}
+.index article.welcome details button svg{
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: red;
+}
+.index article.welcome details.legend summary{
+    color: red;
+}
+.index article.welcome details.codex summary{
+    color: yellow;
+}
+.index article.welcome details.bonuses summary{
+    color: green;
+}
+.index article.nbk{
+    text-align: center;
+}
+.index article.nbk h2{
+    background-color: var(--highlight-color);
+    margin-block: 0;
+    padding-block: .3125em;
+}
+.index article.nbk p.nbk{
+    margin-block-start: .5em;
+    padding-inline: .25em;
+}
+.index article.nbk p a.structure{
+    padding: .75em 1em;
+    font-family: "lineage2";
+    color: rgb(0, 128, 255);
+    font-size: 1.25em;
+    text-underline-offset: .1875em;
+    transition: background-color .5s ease-out;
+}
+.index article.nbk p a.structure:hover{
+    background-color: var(--hover-color);
+}

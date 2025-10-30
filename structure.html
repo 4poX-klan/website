@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/structure.css">
+    <script src="js/burger-menu.js" defer></script>
+    <script src="js/details.js" defer></script>
+    <title>4poX klan</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="burger-menu">
+            <a class="burger-menu__link" href="index.html">4poX <span class="klan">klan</span></a>
+            <button class="burger-menu__btn" data-bm-state="inactive" type="button">
+                <svg class="burger-menu__icon burger-menu__icon--open" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#c9c9c9"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                <svg class="burger-menu__icon burger-menu__icon--close" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#c9c9c9"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+            </button>
+        </nav>
+        <div class="burger-menu-list" data-bm-state="inactive">
+            <ul class="burger-menu-list__items">
+                <li class="burger-menu-list__item"><a class="burger-menu-list__link" href="index.html">Home</a></li>
+                <li class="burger-menu-list__item"><a class="burger-menu-list__link" href="structure.html">Structure</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="burger-menu-overlay" data-bm-state="inactive"></div>
+
+    <main class="structure">
+        <header>
+            <h1>Структура</h1>
+            <p>Здесь ты можешь узнать о клане и его движухе, стратегии, целях...</p>
+        </header>
+        <article class="info">
+            <details>
+                <summary>ГЛАВНОЕ</summary>
+                <p class="main-info">| Main INFO |</p>
+                <p>Итак, если ты задумался не только о вступлении, но и хочешь проявить себя — у тебя есть отличная возможность. Остальных просто попрошу: либо не мешай, либо подыграй. Быть КЛом, ПЛом, форсить людей на РБ — не самое благодарное занятие. Поэтому особо одарённые мудаки отправятся нахуй без объяснений — на это нет времени. Всё уже сказано в Кодексе.</p>
+                <p>На всё награбленное, что попадает в Клан-Хранилище, в первую очередь право пикнуть имеет Вар Лидер. Затем — бишы. А после них — весь остальной люд, кому нужно. Это не прихоть — это стратегия.</p>
+                <p>Далее ты можешь познакомиться с основными деятелями нашего клана. И если ты хочешь попасть в этот список — пусть даже в роли простого рубаки, но открытого и готового к совместной работе — пиши Херальду в дискорд.</p>
+                <p>Хочу еще раз напомнить, что 4poX — это не ожидание, а действие!</p>
+                <button class="details-close" type="button"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#c9c9c9"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
+            </details>
+            
+            <details class="form">
+                <summary>ОБРАЗЕЦ</summary>
+                <p><span class="base">base-class</span><span>| nickname |</span><span class="sub">sub-class</span></p>
+                <p class="member-info">Коротко о себе: кто ты, куда идёшь и какой с тобой можно устроить движ в игре, время онлайна... Вообщем, что посчитаешь нужным.</p>
+                <button class="details-close" type="button"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#c9c9c9"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
+            </details>
+
+            <h2>Состав:</h2>
+            <p class="compos">Выбери или предложи сам, где бы ты хотел попробовать себя реализовать или найти хелпуху.</p>
+
+            <details class="kl">
+                <summary>Klan Lead</summary>
+                <p><span class="base">Hawk</span><span>| Klitcher |</span><span class="sub">Bish</span></p>
+                <p class="member-info">Последний год днём я учусь писать код, а вечером — историю. В линягу захожу, чтобы выдохнуть. 4poX — это не просто проект, это моя мотивация не останавливаться. Личная цель на этом сервере — Олимп. Буду рад трахнуть в пати тех, кто не смотрит назад — ведь именно оттуда обычно приходит 4poX.</p>
+                <button class="details-close" type="button"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#c9c9c9"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
+            </details>
+
+            <details class="wl">
+                <summary>War Lead</summary>
+                <p><span class="base">base-class</span><span>| nickname |</span><span class="sub">sub-class</span></p>
+                <p class="member-info">Вар Лидер — это прежде всего задр, понимающий игру. Твоя задача — быть самым жёстким из нас и вести клан в сражениях. На поле битвы именно ты задаёшь ритм: вырезаешь бишей, направляешь удар и располагаешь пачку так, чтобы она доминировала на поле боя. Ты — хаос с планом, ярость с разумом, лидер тех, кто идёт вперёд, когда остальные ещё думают.</p>
+                <button class="details-close" type="button"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#c9c9c9"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
+            </details>
+
+            <details class="main-bish">
+                <summary>Main Bish</summary>
+                <p><span class="base">base-class</span><span>| nickname |</span><span class="sub">sub-class</span></p>
+                <p class="member-info">Main Bish – прежде всего у тебя стабильный онлайн. Ты всегда готов принять пати и сходить сделать 4poX: помочь убить РБ, захватить спот. Также важно всегда иметь при себе Holy Water... и быть готовым к любым задачам клана.</p>
+                <button class="details-close" type="button"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#c9c9c9"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
+            </details>
+
+            <details class="supp-bish">
+                <summary>Supp Bish</summary>
+                <p><span class="base">base-class</span><span>| nickname |</span><span class="sub">sub-class</span></p>
+                <p class="member-info">Support Bish – возможно, ты всегда хотел поиграть Бишом. Твоя основная задача – подстраховывать Main Bisha. Также ты выступаешь как второй Биш в пачке, поддерживая команду в бою.</p>
+                <button class="details-close" type="button"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#c9c9c9"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
+            </details>
+
+            <details class="sub-bish">
+                <summary>Sub Bish</summary>
+                <p><span class="base">base-class</span><span>| nickname |</span><span class="sub">sub-class</span></p>
+                <p class="member-info">Sub Bish – возможно, ты играешь Варк или Овер как основу. Всегда готов сменить саб и пойти помочь прогнуть спину вару. Также ты можешь быть дамагером. Когда в пачке два Биша, ты становишься ДД или другим полезным классом для команды.</p>
+                <button class="details-close" type="button"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#c9c9c9"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
+            </details>
+
+            <details class="warc">
+                <summary>Warcryer</summary>
+                <p><span class="base">base-class</span><span>| nickname |</span><span class="sub">sub-class</span></p>
+                <p class="member-info">Warcryer – ты можешь быть двигателем нашего клана. Ты хорошо знаком со структурой клана, знаешь, где стоят РБ и какую позицию занимать. Также умеешь собрать пати и провести 4poX-summon.</p>
+                <button class="details-close" type="button"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#c9c9c9"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
+            </details>
+
+            <details class="oly-farmer">
+                <summary>Oly farmer</summary>
+                <p><span class="base">base-class</span><span>| nickname |</span><span class="sub">sub-class</span></p>
+                <p class="member-info">Oly-Farmer – прежде всего ты надежный человек. Я буду стараться, чтобы тебе предоставляли всё необходимое для успешного фарма Оли: шмот, который потом нужно будет вернуть, и чтобы не возникало проблем с командой. Ну и конечно же ты знаешь как чпокать Оли, как бустануть, книги...</p>
+                <button class="details-close" type="button"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#c9c9c9"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
+            </details>
+
+            <details class="dmg">
+                <summary>Dest</summary>
+                <p><span class="base">base-class</span><span>| nickname |</span><span class="sub">sub-class</span></p>
+                <p class="member-info">Это просто пример ДД. Например ты Дест, который всегда готов принять пати и чпокнуть РБ.</p>
+                <button class="details-close" type="button"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#c9c9c9"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
+            </details>
+
+            <details class="dmg">
+                <summary>Sork</summary>
+                <p><span class="base">base-class</span><span>| nickname |</span><span class="sub">sub-class</span></p>
+                <p class="member-info">Это просто пример ДД. Например ты Сорк, с которым можно устроить масс-фарм Стакато или...</p>
+                <button class="details-close" type="button"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#c9c9c9"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
+            </details>
+
+            <details class="dmg">
+                <summary>test</summary>
+                <p><span class="base">base-class</span><span>| nickname |</span><span class="sub">sub-class</span></p>
+                <p class="member-info">Magic in the ...?</p>
+                <button class="details-close" type="button"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#c9c9c9"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button>
+            </details>
+        </article>
+    </main>
+    <footer>
+        <div class="referal">
+            <p>Реферальная ссылка:</p>
+            <a target="_blank" href="https://forceplay.org/ru/sign-up?referral=4510731">Klitcher</a>
+        </div>
+        <div class="discord">
+            <p>Дискорд:</p>
+            <a target="_blank" href="https://discord.gg/nWzNqTke">https://discord.gg/nWzNqTke</a>
+        </div>
+        <div class="e-mail">
+            <p>E-mail:</p>
+            <a href="#">herald.klitcher@gmail.com</a>
+        </div>
+    </footer>
+</body>
+</html>
