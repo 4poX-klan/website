@@ -134,6 +134,9 @@
     text-underline-offset: .1875em;
     transition: background-color .5s ease-out;
 }
+.index article.nbk p.red{
+    color: red;
+}
 .index article.nbk p a.structure:hover{
     background-color: var(--hover-color);
 }
